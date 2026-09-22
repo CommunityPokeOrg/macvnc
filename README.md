@@ -55,8 +55,8 @@ Logs per-connection debug lines to stderr.
 ## Security model — read this before exposing it
 
 - **VNC auth truncates passwords to 8 bytes.** RFB DES auth uses only the
-  first 8 bytes of the password (each bit-reversed). `PV2u7l98CcsR7jcs` is
-  effectively `PV2u7l98`. Treat the effective secret as 8 bytes → always use a
+  first 8 bytes of the password (each bit-reversed). `ExAmPl3-NotReal` is
+  effectively `ExAmPl3-`. Treat the effective secret as 8 bytes → always use a
   strong random password and never reuse a real credential.
 - **DES is not real encryption.** VNC auth is a challenge–response over a fixed
   DES key — fine behind other layers, insufficient as the only defense on an
